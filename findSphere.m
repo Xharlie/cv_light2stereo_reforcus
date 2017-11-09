@@ -5,8 +5,8 @@ function [center, radius] = findSphere(img)
     center = stats.Centroid
     diameters = mean([stats.MajorAxisLength stats.MinorAxisLength],2);
     radius = diameters/2
-    imshow(img)
-    hold on
-    viscircles(centers,radii);
+%     imshow(img)
+%     hold on
+%     viscircles(centers,radii);
     
 end
